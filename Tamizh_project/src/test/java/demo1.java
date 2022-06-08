@@ -1,5 +1,7 @@
 import java.awt.AWTException;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -11,6 +13,8 @@ public class demo1 {
 		
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit);
+		
 	}
 		
 }
