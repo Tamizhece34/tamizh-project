@@ -14,7 +14,7 @@ public class demo1 {
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit);
-		
+		driver.quit();
 	}
 		
 }
